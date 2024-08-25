@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithyan-personal-webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/daa10fcf37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="https://github.com/adithyan666">github</a></li>
+                <li><a href="https://www.linkedin.com/in/adithyan-p-a-902b1228a">linkedin</a></li>
+                <li><a href="#contact">contact </a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>
+                Engineering student
+            </p>
+            <h1>Hey,myself <span>Adithyan P A</span> <br>from Kerala, India</h1>
+        </div>
+    </div>
+    
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-1">
+            <img src="WhatsApp Image 2023-09-06 at 20.57.24.jpg">
+        </div>
+        <div class="about-2">
+            <h1 id="subtitle">About Me</h1>
+            <p>
+                A highly motivated college student with a strong passion for computer science.
+                Have a background in combining technical knowledge with  exceptional interpersonal skills. My
+                standout quality is flexibility. Into new ideas and technologies.
+                
+            </p>
+            <div id="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                <p class="tab-links" onclick="opentab('certify')">Certifications</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>python</span><br>familiar with python programming</li>
+                    <li><span>deep learing</span><br>Image processing using deep learing</li>
+                    <li><span>photoshop</span><br>Into photoshop</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="certify">
+                <ul>
+                    <li><span>Scientific computation in python</span><br>Certification on Scientific computing using python <br> from FreeCodeCamp</li>
+                    <li><span>DataBase Management</span><br>Certification on DataBase Management System <br>from NPTEL</li>
+                    <li><span>Intership on web development</span><br>Intership Certification on web development <br> from INTRAINZ</li>
+                
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2025</span><br>BTech on Computer Science and Engineering <br> from Mar Athanasius College Of Engineering</li>
+                    <li><span>2022</span><br>Diploma in Computer Engineering <br>from IPT & GPTC Shorannur</li>
+                    <li><span>2020</span><br>Higher secondary Education <br> at GHSS Kottayi</li>
+                    <li><span>2018</span><br>Higher school <br> at Vyasa Vidhya Peethom Kallekkad</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--services-->
+<div id="sevices">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="Services-list">
+            <div>
+                <i class="fa-solid fa-sign-hanging"></i>
+                <h2>Real Time Traffic Sign Prediction</h2>
+                
+                <p>
+                    
+A real-time traffic sign detection system identifies and classifies traffic signs in live video feeds or camera images, aiding in navigation and safety for advanced driver assistance systems and autonomous vehicles.
+                    <br><a href="traffic.html">Read more..</a>
+
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-store"></i>
+                <h2>Inventory Management System</h2>
+                <p>
+                    An Inventory Management System using MySQL enables businesses to efficiently track, manage, 
+                    and update their inventory by storing product details, stock levels, and transactions in a MySQL database
+                    <br><a href="inventory.html">Read more..</a>
+
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <h2>portfolio webpage</h2>
+                <p>
+                    A self-portfolio webpage displays your skills, experiences, and projects to highlight your professional profile. 
+                    It serves as a digital resume and a point of contact for networking and career opportunities.
+                    <br><a href="#">Read more..</a>
+
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-seedling"></i>
+                <h2>Farmer Asisstant using AI (ongoing)</h2>
+                <p>
+                    A Farmer Assistant using AI identifies crop diseases and suggests cures by analyzing images with machine learning. 
+                    It offers farmers quick, accurate insights to tackle plant health issues, reducing crop loss and improving yields.
+                    <br><a href="#">Read more..</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>ayadithyan2002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://github.com/adithyan666"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adithyan-p-a-902b1228a"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="" class="btn">View CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <textarea name="Message" placeholder="Leave the message here"  rows="6"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    // Reset all tab-links to remove the active-link class
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link")
+    }
+
+    // Reset all tab-contents to remove the active-tab class
+    for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+    var Sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        Sidemenu.style.right="0";
+    }
+    function closemenu(){
+        Sidemenu.style.right = "-200px"
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwbM9TD-S07rWdd92DT5H9ZXn2AFTENHiIq1eH6AZJooPTw_M8nSpExgmkRf8Gs_vLl/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Your Message has been sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
